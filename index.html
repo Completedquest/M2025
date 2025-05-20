@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lawn Spot Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Book a Spot on the Lawn</h1>
+  <div id="lawn-container">
+    <img src="lawn.jpeg" alt="Lawn" id="lawn-image">
+    <div class="spot" id="spot-1" style="top: 50%; left: 30%;">Spot 1</div>
+    <div class="spot" id="spot-2" style="top: 55%; left: 40%;">Spot 2</div>
+    <div class="spot" id="spot-3" style="top: 65%; left: 35%;">Spot 3</div>
+  </div>
+
+  <div id="form-modal" class="hidden">
+    <form id="booking-form">
+      <h2>Book Spot</h2>
+      <input type="hidden" name="spotId" id="spotId">
+      <label>Name:<input type="text" name="name" required></label>
+      <label>Email:<input type="email" name="email" required></label>
+      <label>Group Size:<input type="number" name="groupSize" required min="1"></label>
+      <button type="submit">Submit</button>
+      <button type="button" onclick="closeModal()">Cancel</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
