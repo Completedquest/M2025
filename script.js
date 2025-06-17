@@ -18,7 +18,7 @@ spots.forEach(spot => {
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const data = new FormData(form);
-  const response = await fetch('https://script.google.com/home/projects/1q-crVBaIQ4-TO1wpkzf76nMH12pVslAI0o0LTjmtXID-9TuSn-eBdDyE/edit', {
+  const response = await fetch('https://script.google.com/macros/s/AKfycbxQfgJi9S73WdgNccAJp6lrpePfo3qiNKUIISptrZrV8W3dcs0q-2QrCO7xhLVaZ5XZTA/exec', {
     method: 'POST',
     body: data
   });
