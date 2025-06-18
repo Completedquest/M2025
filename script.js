@@ -17,7 +17,6 @@ fetch(scriptURL)
       const spot = document.getElementById(spotId);
       if (spot) {
         spot.classList.add('booked'); // Grey it out
-        spot.onclick = null; // Disable clicking
       }
     });
   })
