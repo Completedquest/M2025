@@ -3,7 +3,7 @@ const modal = document.getElementById('form-modal');
 const form = document.getElementById('booking-form');
 const spotIdInput = document.getElementById('spotId');
 const closeBtn = document.getElementById('close');
-const scriptURL = 'YOUR_GOOGLE_SCRIPT_URL_HERE';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxefVfHsa3hV0eurccHNUQhwNaHFlxiRW4P3VnSaY2qvj1OGOYp7LccHXU6UZB_iq_Aiw/exec';
 
 fetch(scriptURL)
   .then(res => res.json())
