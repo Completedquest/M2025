@@ -2,8 +2,6 @@ const spots = document.querySelectorAll('.spot');
 const modal = document.getElementById('form-modal');
 const form = document.getElementById('booking-form');
 const spotIdInput = document.getElementById('spotId');
-const form = document.getElementById('booking-form');
-const modal = document.getElementById('modal');
 const closeBtn = document.getElementById('close');
 let selectedSpot = null;
 
