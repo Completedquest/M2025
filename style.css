@@ -12,39 +12,39 @@ body {
   max-width: 800px;
 }
 .spot {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(0, 128, 0, 0.5);
-  border: 2px solid black;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  background-color: rgba(0, 200, 0, 0.8); /* greenish default */
+  position: absolute;
   cursor: pointer;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: transform 0.2s, background-color 0.2s;
+  border: 2px solid white;
 }
-.spot.booked {
-  background-color: gray;
-  cursor: not-allowed;
+
+.spot:hover {
+  transform: scale(1.1);
 }
-#form-modal {
-  position: fixed;
-  top: 20%;
-  left: 35%;
-  background: white;
-  border: 2px solid black;
-  padding: 20px;
-  display: none;
-}
-#form-modal.show {
-  display: block;
-}
-.hidden {
-  display: none;
-}
+
 .booked {
-  background-color: gray !important;
+  background-color: #555 !important; /* darker grey */
+  opacity: 0.4;
   cursor: not-allowed;
-  opacity: 0.1;
+  pointer-events: none;
+  border: 2px dashed #999;
+  position: relative;
+}
+
+.booked::after {
+  content: "Booked";
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
 }
