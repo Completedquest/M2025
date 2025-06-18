@@ -26,7 +26,6 @@ body {More actions
 }
 .spot.booked {
   background-color: gray;
-  cursor: not-allowed;
 }
 #form-modal {
   position: fixed;
