@@ -7,7 +7,7 @@ const modal = document.getElementById('modal');
 const closeBtn = document.getElementById('close');
 let selectedSpot = null;
 
-const scriptURL = 'https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzBrAZO6-iBu_EVwPcaHAhLUliKOLwtbuADwg3vnT7p0fmpB0oIH2LSYYcofPYMfuDzRg/exec';
 
 // 🔄 Fetch booked spots on load
 fetch(scriptURL)
