@@ -46,5 +46,5 @@ body {
 .booked {
   background-color: gray !important;
   cursor: not-allowed;
-  opacity: 0.5;
+  opacity: 0.1;
 }
