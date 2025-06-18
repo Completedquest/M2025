@@ -1,7 +1,8 @@
-const spots = document.querySelectorAll('.spot');More actions
+const spots = document.querySelectorAll('.spot');
 const modal = document.getElementById('form-modal');
 const form = document.getElementById('booking-form');
 const spotIdInput = document.getElementById('spotId');
+
 // Attach click events to each spot
 spots.forEach(spot => {
   spot.addEventListener('click', () => {
