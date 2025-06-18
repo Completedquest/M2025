@@ -43,3 +43,8 @@ body {
 .hidden {
   display: none;
 }
+.booked {
+  background-color: gray !important;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
